@@ -15,7 +15,7 @@ public class BubbleSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (true)
+        if (Detector.IsPouring)
         {
             TotalTime += Time.deltaTime;
 
@@ -30,9 +30,8 @@ public class BubbleSpawner : MonoBehaviour {
 
     void SpawnBubble()
     {
-        Debug.Log("hit");
         Vector3 point = new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f))+transform.position;
-        float speed = Random.Range(0.1f, 1f);
+        float speed = Random.Range(0.3f, 1f);
         float scale = Random.Range(0.01f, 0.025f);
         GameObject bubble = (GameObject)Instantiate(SmallBubble, point, transform.rotation);
         bubble.GetComponent<SmallBubble>().SetStart(scale, speed);
