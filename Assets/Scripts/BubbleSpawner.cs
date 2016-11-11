@@ -29,7 +29,8 @@ public class BubbleSpawner : MonoBehaviour {
 	}
 
     void SpawnBubble()
-    {  
+    {
+        Debug.Log("hit");
         Vector3 point = new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f))+transform.position;
         float speed = Random.Range(0.1f, 1f);
         float scale = Random.Range(0.01f, 0.025f);
