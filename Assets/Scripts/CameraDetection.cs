@@ -20,13 +20,14 @@ public class CameraDetection : MonoBehaviour {
     public Renderer ColorViewer,CameraViewer;
     public GameObject Bubble;
     public float LightValue, DarkValue,DarkTreshhold,DarkTreshholdRatio = 0.3f;
+    public bool IsPouring = false;
 
     private GameState GState = GameState.CalibrateLight;
     private WebCamTexture WTex;
     private Texture2D Tex;
     private int logNr = 0;
     private float TotalGray;
-    private bool IsPouring = false;
+    
 
 	// Use this for initialization
 	void Start () {
