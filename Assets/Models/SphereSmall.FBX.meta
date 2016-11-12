@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 68e9d477749704344a56c12c2ed0d0c7
-timeCreated: 1478908306
+guid: f817069ec33cd8742beb061cfb12a596
+timeCreated: 1478909270
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,10 +9,10 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: GeoSphere001
+    4300000: SmallGeoSphere
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
